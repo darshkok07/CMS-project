@@ -1,0 +1,21 @@
+{
+  "name": "node-practice",
+  "version": "1.0.0",
+  "description": "learning backend javascript node",
+  "keywords": [
+    "kok"
+  ],
+  "license": "ISC",
+  "author": "darshkok",
+  "type": "commonjs",
+  "main": "comment.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "ej": "^1.0.4",
+    "ejs": "^3.1.10",
+    "express": "^4.21.2",
+    "node": "^23.9.0"
+  }
+}

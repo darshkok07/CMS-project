@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Management System</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .nav.div a:hover{
+            color:black;
+        }
+    </style>
+</head>
+<body class="bg-blue">
+    <!-- Navigation Bar -->
+    <nav class="bg-blue-600 p-4 text-white">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">College Management System</h1>
+            <div>
+                <a href="./addstudent.html" class="px-4 hover:text-gray-300">Add Student</a>
+                <a href="./addcourse.html" class="px-4 hover:text-gray-300">AddCourses</a>
+                <a href="./faculty.html" class="px-4 hover:text-gray-300">ManageFaculty</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mx-auto mt-8 flex">
+        <!-- Sidebar -->
+        <aside class="w-1/4 bg-white p-4 rounded-lg shadow-md">
+            <h2 class="text-xl font-semibold mb-4">Quick Links</h2>
+            <ul>
+                <li class="mb-2"><a href="./addstudent.html" class="text-blue-600 hover:underline">Add Student</a></li>
+                <li class="mb-2"><a href="./addcourse.html" class="text-blue-600 hover:underline">Add Course</a></li>
+                <li class="mb-2"><a href="https://x.com/i/flow/login?lang=en" class="text-blue-600 hover:underline">View Reports</a></li>
+                <li class="mb-2"><a href="./faculty.html" class="text-blue-600 hover:underline">Manage Faculty</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Area -->
+        <main class="w-3/4 ml-8">
+            <div class="bg-white p-8 rounded-lg shadow-md">
+                <h2 class="text-2xl font-bold mb-6">Dashboard</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Card 1: Total Students -->
+                    <div class="bg-blue-100 p-6 rounded-lg">
+                        <h3 class="text-lg font-semibold">Total Students</h3>
+                        <p class="text-3xl font-bold">1,234</p>
+                    </div>
+
+                    <!-- Card 2: Total Courses -->
+                    <div class="bg-green-100 p-6 rounded-lg">
+                        <h3 class="text-lg font-semibold">Total Courses</h3>
+                        <p class="text-3xl font-bold">56</p>
+                    </div>
+
+                    <!-- Card 3: Total Faculty -->
+                    <div class="bg-yellow-100 p-6 rounded-lg">
+                        <h3 class="text-lg font-semibold">Total Faculty</h3>
+                        <p class="text-3xl font-bold">45</p>
+                    </div>
+                </div>
+
+                <!-- Recent Activities -->
+                <div class="mt-8">
+                    <h3 class="text-xl font-semibold mb-4">Recent Activities</h3>
+                    <ul class="space-y-2">
+                        <li class="bg-gray-50 p-4 rounded-lg">New student enrolled: John Doe</li>
+                        <li class="bg-gray-50 p-4 rounded-lg">Course "Mathematics 101" updated</li>
+                        <li class="bg-gray-50 p-4 rounded-lg">Faculty member added: Dr. Jane Smith</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
